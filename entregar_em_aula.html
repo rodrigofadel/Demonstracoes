@@ -67,19 +67,19 @@ img {
 </div>
 
 
-<p><span class="math">\(\theta\)</span> = <span class="math">\(E[e^U]\)</span> = <span class="math">\(\int_0^1 e^u du\)</span>, onde <span class="math">\(U\)</span>~<span class="math">\(U(0,1)\)</span>.</p>
-<p>Escolhendo <span class="math">\(f(U) = U\)</span>, então <span class="math">\(E[U] = \frac{1}{2}\)</span> e <span class="math">\(V[U] = \frac{1}{12}\)</span>.</p>
+<p><span class="math">\(\theta\)</span> = <span class="math">\(\mathbb{E}[e^U]\)</span> = <span class="math">\(\int_0^1 e^u du\)</span>, onde <span class="math">\(U\)</span>~<span class="math">\(U(0,1)\)</span>.</p>
+<p>Escolhendo <span class="math">\(f(U) = U\)</span>, então <span class="math">\(\mathbb{E}[U] = \frac{1}{2}\)</span> e <span class="math">\(V[U] = \frac{1}{12}\)</span>.</p>
 <p>Por definição, sabemos que: <span class="math">\[
-Cov[f(U),g(U)] = E[f(U)*g(U)]-E[f(U)]*E[g(U)]
+Cov[f(U),g(U)] = \mathbb{E}[f(U)*g(U)]-\mathbb{E}[f(U)]*\mathbb{E}[g(U)]
 \]</span></p>
 <p>Sabemos que: <span class="math">\[
-E[f(U)] = 1/2\\
+\mathbb{E}[f(U)] = 1/2\\
 e\\
-E[g(U)] = \int_0^1 e^u du = e-1\\
-\]</span> Nos resta calcular a <span class="math">\(E[f(U)*g(U)]\)</span>.</p>
+\mathbb{E}[g(U)] = \int_0^1 e^u du = e-1\\
+\]</span> Nos resta calcular a <span class="math">\(\mathbb{E}[f(U)*g(U)]\)</span>.</p>
 <p><span class="math">\[
 \begin {aligned}
-E[f(U)*g(U)] &amp;= E[Ue^U]\\
+\mathbb{E}[f(U)*g(U)] &amp;= \mathbb{E}[Ue^U]\\
 &amp;= \int_0^1 ue^u du\\
 &amp;= \left[ue^u-\int e^u du\right]_0^1\\
 &amp;=\left[e^u(u-1)\right]_0^1\\

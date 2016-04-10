@@ -6,26 +6,26 @@ output: html_document
 ---
 
 
-$\theta$ = $E[e^U]$ = $\int_0^1 e^u du$, onde $U$~$U(0,1)$.
+$\theta$ = $\mathbb{E}[e^U]$ = $\int_0^1 e^u du$, onde $U$~$U(0,1)$.
 
-Escolhendo $f(U) = U$, então $E[U] = \frac{1}{2}$ e $V[U] = \frac{1}{12}$.
+Escolhendo $f(U) = U$, então $\mathbb{E}[U] = \frac{1}{2}$ e $V[U] = \frac{1}{12}$.
 
 Por definição, sabemos que:
 $$
-Cov[f(U),g(U)] = E[f(U)*g(U)]-E[f(U)]*E[g(U)]
+Cov[f(U),g(U)] = \mathbb{E}[f(U)*g(U)]-\mathbb{E}[f(U)]*\mathbb{E}[g(U)]
 $$
 
 Sabemos que:
 $$
-E[f(U)] = 1/2\\
+\mathbb{E}[f(U)] = 1/2\\
 e\\
-E[g(U)] = \int_0^1 e^u du = e-1\\
+\mathbb{E}[g(U)] = \int_0^1 e^u du = e-1\\
 $$
-Nos resta calcular a $E[f(U)*g(U)]$.
+Nos resta calcular a $\mathbb{E}[f(U)*g(U)]$.
 
 $$
 \begin {aligned}
-E[f(U)*g(U)] &= E[Ue^U]\\
+\mathbb{E}[f(U)*g(U)] &= \mathbb{E}[Ue^U]\\
 &= \int_0^1 ue^u du\\
 &= \left[ue^u-\int e^u du\right]_0^1\\
 &=\left[e^u(u-1)\right]_0^1\\
